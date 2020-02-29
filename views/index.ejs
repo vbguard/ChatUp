@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatUp</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+  <script defer src="socket.io/socket.io.js"></script>
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="title">Chatup</h1>
+      <div class="content"></div>
+    </div>
+
+    <div class="chat-public">
+      <div class="counter-container">
+        <span class="counter-title">Users online:</span><span class="users-counter">0</span>
+      </div>
+      <div class="chat-wrap">
+        <div id="message-container">
+        </div>
+        <form id="send-container">
+          <input type="text" id="message-input" placeholder="Type a message here ...">
+          <button type="submit" id="send-button"></button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

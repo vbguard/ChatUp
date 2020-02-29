@@ -1,0 +1,11 @@
+@import './reset.scss';
+@import './index.scss';
+@import './room.scss';
+@import './colors.scss';
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: $grey;
+  color: rgb(234,234,234)
+}

@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.container {
+  flex: 0 0 40%;
+}
+
+.chat-public {
+  flex: 0 0 40%;
+  height: 679px;
+}
+
+.counter-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1;
+  display: inline-block;
+  color: #0d1c2e;
+  -webkit-text-stroke: 1px rgba(112, 124, 151, 0.25);
+}
+
+.users-counter {
+  margin-left: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1;
+  display: inline-block;
+  color: #2a8bf2;
+  -webkit-text-stroke: 1px solid rgba(112, 124, 151, 0.25);
+}
+
+.counter-container {
+  width: 100%;
+  height: 60px;
+  background: #fafbff;
+  border: 1px solid rgba(112, 124, 151, 0.25);
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 35px 35px 0px 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
+
+.chat-wrap {
+  width: 100%;
+  height: auto;
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+  border: 1px solid rgba(112, 124, 151, 0.25);
+  box-sizing: border-box;
+  border-radius: 0px 0 35px 35px;
+  padding: 46px;
+}
+
+#message-container {
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: calc(100vh - 120px - 50px - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#send-container {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#send-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(112, 124, 151, 0.15);
+  border-radius: 2px;
+}
+
+#message-container div {
+  background-color: #ccc;
+  padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: #fff;
+}
+
+#message-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+#message-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(112, 124, 151, 0.5);
+}
+
+#send-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("fIcon.png");
+  background-position: 44% 45%;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 4px 6px 10px rgba(42, 139, 242, 0.15), 2px 2px 25px rgba(42, 139, 242, 0.05), 4px 4px 25px rgba(42, 139, 242, 0.15);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #d3d3d3;
+  color: #eaeaea;
+}
